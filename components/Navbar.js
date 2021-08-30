@@ -19,7 +19,7 @@ const BlogNavbar = ({theme, toggleTheme}) => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
               { /* <div></div> */}
-              <ThemeToggle onChange={toggleTheme} />
+              <ThemeToggle theme={theme.type} onChange={toggleTheme} />
               <Nav.Link
                 as={() =>
                   <Link href='/'>
